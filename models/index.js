@@ -6,3 +6,5 @@ const models = {
     usersModel : require("./user"),
     paymentModel: require("./payment")
 }
+
+module.exports = models

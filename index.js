@@ -11,7 +11,7 @@ const morgan = require("morgan")
 app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 app.use(bodyParser.json({ limit: '50mb' }));
-app.use(cookieParser());
+// app.use(cookieParser());
 app.use(morgan('dev'));
 app.use((req, res, next) => {
 
