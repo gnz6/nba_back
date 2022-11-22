@@ -22,12 +22,15 @@ const ProductSchema = new mongoose.Schema({
         type:String,
         enum:["Jersey", "Short", "Sneakers"]
     },
-    for:{
+    madeFor:{
         type:String,
         enum:["Man","Woman", "Kids"]
     },
     size:{
         type:Number
+    },
+    team:{
+        type: String
     }
 }, {
     timestamps: true
